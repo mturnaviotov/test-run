@@ -11,9 +11,9 @@ on:
     branches: [ "main" ]
   workflow_call:
     inputs:
-      username:
-        description: 'A username passed from the caller workflow'
-        default: 'john-doe'
+      app_version:
+        description: 'A tag as app version passed from the caller workflow'
+        default: 'none'
         required: true
         type: string
   # Allows you to run this workflow manually from the Actions tab
