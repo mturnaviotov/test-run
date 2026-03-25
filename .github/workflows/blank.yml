@@ -16,6 +16,13 @@ on:
         default: 'none'
         required: true
         type: string
+  workflow_dispatch:
+    inputs:
+      app-version:
+        description: 'A tag as app version passed from the caller workflow'
+        default: 'none'
+        required: true
+        type: string
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
