@@ -11,7 +11,7 @@ on:
     branches: [ "main" ]
   workflow_call:
     inputs:
-      app_version:
+      app-version:
         description: 'A tag as app version passed from the caller workflow'
         default: 'none'
         required: true
@@ -33,4 +33,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo Hello, ${{ inputs.app_version }}!
+        run: echo Hello, ${{ inputs.app-version }}!
