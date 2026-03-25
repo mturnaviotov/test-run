@@ -9,13 +9,6 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-  workflow_call:
-    inputs:
-      app-version:
-        description: 'A tag as app version passed from the caller workflow'
-        default: 'none'
-        required: true
-        type: string
   workflow_dispatch:
     inputs:
       app-version:
